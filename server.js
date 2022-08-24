@@ -42,6 +42,9 @@ app.get("/", (req, res) => {
 });
 
 require("./app/routes/receiveRoutes")(app);
+require("./app/routes/campusRouter")(app);
+require("./app/routes/carouselRouter")(app);
+require("./app/routes/bannerRouter")(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
